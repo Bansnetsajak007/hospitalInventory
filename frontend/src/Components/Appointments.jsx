@@ -23,7 +23,8 @@ function Appointments() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const apiUrl = 'http://localhost:5000';
+      // const apiUrl = 'http://localhost:5000';
+      const apiUrl = 'https://hospitalinventory.onrender.com';
       
       const response = await fetch(`${apiUrl}/api/appointments`, {
         method: 'POST',

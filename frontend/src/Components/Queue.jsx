@@ -11,7 +11,7 @@ function Queue() {
 
   const fetchAppointments = async () => {
     try {
-      const apiUrl ='http://localhost:5000'; // Fallback to localhost if environment variable not set
+      const apiUrl = 'https://hospitalinventory.onrender.com'; 
       const response = await axios.get(`${apiUrl}/api/getAppoipments`);
       console.log(response.data);
 
